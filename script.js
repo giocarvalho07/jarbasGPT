@@ -2,7 +2,7 @@
 const formPerguntaChat = document.getElementById('form-pergunta-chat');
 
 // Chave da API do OPENAI
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 
 if (formPerguntaChat) {
@@ -24,6 +24,15 @@ if (formPerguntaChat) {
         
         // Limpar a resposta
         document.getElementById('resposta').innerHTML = "<span></span>";
+
+        const campoPergunta = document.getElementById("campo-pergunta");
+        const botaoLimpar = document.getElementById("limparBotao");
+
+        // Adicione um ouvinte de evento ao botão de limpar
+        botaoLimpar.addEventListener("click", function() {
+            // Limpe o valor do textarea
+            campoPergunta.value = "";
+        });
 
         // Requisição para chatgpt
         await fetch("https://api.openai.com/v1/completions", {
