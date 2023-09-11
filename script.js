@@ -2,7 +2,7 @@
 const formPerguntaChat = document.getElementById('form-pergunta-chat');
 
 // Chave da API do OPENAI
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 
 if (formPerguntaChat) {
