@@ -2,7 +2,7 @@
 const formPerguntaChat = document.getElementById('form-pergunta-chat');
 
 // Chave da API do OPENAI
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "chave api key chatGPT";
 
 
 if (formPerguntaChat) {
